@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="headset.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsivo.css" />
+    <title>SoundLive</title>
+  </head>
+
+  <body>
+
+    <header>
+      <a href="#" class="logo"><i class="bx bx-headphone"></i>SoundLive</a>
+
+      <ul class="navegaçao">
+        <li><a href="#">Visão geral</a></li>
+        <li><a href="#">Especificações</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+
+      <div class="header-icons">
+        <i class="bx bx-cart"></i>
+        <div id="menu"><i class="bx bx-menu"></i></div>
+      </div>
+    </header>
+
+    <section class="home">
+        <img src="jbl-branco-g.png" class="one" />
+        <div>
+        <h1>
+          Wireless <br />
+          Headphones
+        </h1>
+        <h5>A maneira mais inteligente de ouvir</h5>
+        <h3>R$199,00</h3>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </section>
+
+    <div class="main">
+      <div class="row">
+        <img src="jbl-branco-p.png" onclick="slider('jbl-branco-g.png')" />
+      </div>
+      <div class="row2">
+        <img src="jbl-pretp-p.png" onclick="slider('jbl-preto-g.png')" />
+      </div>
+      <div class="row3">
+        <img src="jbl-red-p.png" onclick="slider('jbl-red-g.png')" />
+      </div>
+      <div class="row4">
+        <img src="jbl-azul-p.png" onclick="slider('jbl-azul-g.png')" />
+      </div>
+      <div class="row5">
+        <img src="jbl-rosa-p.png" onclick="slider('jbl-rosa-g.png')" />
+      </div>
+      <div class="row6">
+        <img src="jbl-roxo-p.png" onclick="slider('jbl-roxo-g.png')" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      function slider(anything) {
+        document.querySelector(".one").src = anything;
+      }
+
+      let menu = document.querySelector("#menu-icon");
+      let navbar = document.querySelector(".navbar");
+
+      menu.onclick = () => {
+        menu.classList.toggle("bx-x");
+        navbar.classList.toggle("open");
+      };
+    </script>
+  </body>
+</html>
